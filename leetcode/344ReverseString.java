@@ -42,3 +42,19 @@ public class Solution {
 }
 
 */
+
+/*
+
+public class Solution {
+    public String reverseString(String s) {
+        int n = s.length();
+        char[] result = new char[n];
+        char[] original = s.toCharArray();
+        for(int i=0,j=n-1;i<n;i++,j--){
+            result[i] = original[j];
+        }
+        return new String(result);
+    }
+}
+
+*/
