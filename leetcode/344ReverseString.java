@@ -44,6 +44,14 @@ public class Solution {
 */
 
 /*
+* NOTE: The first 2 are non-ideal b/c String types are immutable. When you try
+* to concatenate to a String you are actually creating a new String in memory
+* and this is time consuming. It's better to use a String Builder or 
+* just reverse the string in place.
+*/
+
+
+/*
 
 public class Solution {
     public String reverseString(String s) {
