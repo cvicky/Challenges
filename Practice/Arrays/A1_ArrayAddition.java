@@ -36,5 +36,20 @@ public class A1_ArrayAddition {
       result[len--] = subresult%10;
     }
     
+    //if carry digit isn't 0 when reach here,
+    //then you have an additional numbers place, need to make a new result[]
+    if(carry !=0){
+        int[] newResult = new int[result.length+1];
+        //fill in the newResult[] with result values, backwards
+        for(int index = newResult.length-1; index > 0; index--){
+            newResult[index] = result[index];
+        }
+        //the for loops stops when index= 0 in newResult, which is the carry
+        newResult[0] = carry;
+        return newResult;
+        
+    }//end iff
+    
+    return result; //didn't need to make a newResult []
   }
 }
