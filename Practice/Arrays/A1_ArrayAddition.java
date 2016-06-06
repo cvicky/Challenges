@@ -21,21 +21,18 @@ public class A1_ArrayAddition {
       carry = subresult/10; //if numbers add up to more than 10, carry the one
       result[len--] = subresult%10; //gets the ones place of 2-digit number sum
     }
-    
     //if arr1 is bigger number than arr2
     while(i>=0){
       subresult = arr1[i--] + carry;
       carry = subresult/10;
       result[len--] = subresult%10;
     }
-    
     //if arr2 is bigger number than arr1
     while(j>=0){
       subresult = arr2[j--] + carry;
       carry = subresult/10;
       result[len--] = subresult%10;
     }
-    
     //if carry digit isn't 0 when reach here,
     //then you have an additional numbers place, need to make a new result[]
     if(carry !=0){
