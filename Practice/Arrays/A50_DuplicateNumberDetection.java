@@ -9,9 +9,19 @@
 * https://leetcode.com/problems/find-the-duplicate-number/
 */
 
+//array can't be changed, means that array can't be sorted
+
+/*
+O(1) space: memory required by the algorithm is constant, 
+i.e. does not depend on the size of the input.
+
+O(n) space: memory required by the algorithm has (in the worst case)
+the same order of magnitude as the size of the input.
+*/
 public class A50_DuplicateNumberDetection {
   public int findDuplicate( int[] nums){
-    if(nums.length == 0 || num.length ==1){
+    //base case, no duplicates possible
+    if(nums.length == 0 || nums.length ==1){
       return -1;
     }
     
@@ -22,10 +32,13 @@ public class A50_DuplicateNumberDetection {
       fast = nums[nums[fast]];
     }
     
+    //fast is the duplicate number b/c slow is the one that is kept 
+    //to be checked against fast
+    
     fast = 0;
-    while(slow = nums[slow]){
-      slow= nums[slow];
-      fast = num[fast];
+    while(slow != fast){
+      slow = nums[slow];
+      fast = nums[fast];
     }
     
     return fast;
@@ -33,7 +46,7 @@ public class A50_DuplicateNumberDetection {
   
   public static void main (String args[]){
     int[] input = {2,1,3,4,3};
-    A50_DuplicateNumberDetection dd = new DuplicateNumberDetection();
+    A50_DuplicateNumberDetection dd = new A50_DuplicateNumberDetection();
     System.out.println( dd.findDuplicate(input) );
   }
   
