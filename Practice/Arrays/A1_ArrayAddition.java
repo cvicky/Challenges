@@ -52,4 +52,16 @@ public class A1_ArrayAddition {
     
     return result; //didn't need to make a newResult []
   }
+  
+  public static void main (String args[]){
+      int arr1[] = {9,9,9,9,9,9,9};
+      int arr2[] = {1,2,3,4,5,6};
+      A1_ArrayAddition aa = new ArrayAddition();
+      int result[] = aa.add(arr1, arr2);
+      
+      //print out the result[]
+      for(int i=0; i< result.length; i++){
+          System.out.print(""+ result[i]);
+      }
+  }
 }
