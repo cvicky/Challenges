@@ -51,3 +51,29 @@ public class A50_DuplicateNumberDetection {
   }
   
 }
+
+//or bit manipulation
+/*
+We can count the sum of each 32 bits separately for the given array
+(stored in "b" variable) and for the array [1, 2, 3, ..., n] 
+(stored in "a" variable). If "b" is greater than "a", it means
+that duplicated number has 1 at the current bit position 
+(otherwise, "b" couldn't be greater than "a"). This way we 
+retrieve the answer bit by bit:
+*/
+
+/*
+public int findDuplicate(int[] nums) {
+    int n = nums.length-1, res = 0;
+    for (int p = 0; p < 32; ++ p) {
+        int bit = (1 << p), a = 0, b = 0;
+        for (int i = 0; i <= n; ++ i) {
+            if (i > 0 && (i & bit) > 0) ++a;
+            if ((nums[i] & bit) > 0) ++b;
+        }
+        if (b > a) res += bit;
+    }
+    return res;
+}
+
+*/
