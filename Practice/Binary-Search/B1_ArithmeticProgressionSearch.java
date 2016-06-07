@@ -16,17 +16,17 @@ public class B1_ArithmeticProgressionSearch {
   public int search (int input[]){
     int low =0;
     int high = input.length-1;
-    int avgval = (input[high] - input[low])/(input.length); //find the pattern
-    int midde = -1;
+    int arithprog = (input[high] - input[low])/(input.length); //find the pattern
+    int middle = -1;
     while(low <= high){
       middle = (low + high)/2; //middle index
-      if(input[middle] == input[0] + (middle)*avgval) {
+      if(input[middle] == input[0] + (middle)*arithprog) {
           low = middle +1;
-      } else if( (input[middle] > input[0] + (middle)*avgval ) &&
-                  input[middle-1] == input[0] +(middle-1)*avgval) {
-              return input[0] + (middle)*avgval;                
+      } else if( (input[middle] > input[0] + (middle)*arithprog ) &&
+                  input[middle-1] == input[0] +(middle-1)*arithprog) {
+              return input[0] + (middle)*arithprog;                
       } else {
-          hight = middle-1;
+          high = middle-1;
       }
     }
     
@@ -34,7 +34,7 @@ public class B1_ArithmeticProgressionSearch {
     } //end search()
     
     public static void main (String args[]){
-      int input[] = {1,7,10,13,16,19,22);
+      int input[] = {1,7,10,13,16,19,22};
       B1_ArithmeticProgressionSearch aps = new B1_ArithmeticProgressionSearch();
       System.out.println( aps.search(input) );
     }
