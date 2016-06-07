@@ -52,6 +52,10 @@ public class A50_DuplicateNumberDetection {
   
 }
 
+/*explanation of this solution:
+http://keithschwarz.com/interesting/code/?dir=find-duplicate
+*/
+
 //or bit manipulation
 /*
 We can count the sum of each 32 bits separately for the given array
