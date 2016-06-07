@@ -16,7 +16,9 @@ public class B1_ArithmeticProgressionSearch {
   public int search (int input[]){
     int low =0;
     int high = input.length-1;
-    int arithprog = (input[high] - input[low])/(input.length); //find the pattern
+    int arithprog = (input[high] - input[low])/(input.length);//find the pattern
+    //this is the meaning of arithmetic progression
+    //each index value has a difference of +arithprog between them
     int middle = -1;
     while(low <= high){
       middle = (low + high)/2; //middle index
