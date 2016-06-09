@@ -7,7 +7,7 @@ Given an integer and number k, right or left rotate bits in this interger by k
 */
 
 public class B2_BitRotation {
-  public byte rotateLeft( byte num, int d){
+  public byte rotateLeft( byte num, int k){
     return (byte) ( (num << k) | (num >>> (8-k)) );
   }
   
