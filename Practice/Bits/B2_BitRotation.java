@@ -24,18 +24,27 @@ difference between >> and >>>
 
 >> is arithmetic shift right, >>> is logical shift right.
 
-In an arithmetic shift, the sign bit is extended to preserve the signedness of the number.
+In an arithmetic shift, the sign bit is extended to preserve the
+signedness of the number.
 
-For example: -2 represented in 8 bits would be 11111110 (because the most significant bit has negative weight). Shifting it right one bit using arithmetic shift would give you 11111111, or -1. Logical right shift, however, does not care that the value could possibly represent a number; it simply moves everything to the right and fills in from the left with 0s. Shifting our -2 right one bit using logical shift would give 01111111.
+For example: -2 represented in 8 bits would be 11111110 (because
+the most significant bit has negative weight). Shifting it right 
+one bit using arithmetic shift would give you 11111111, or -1.
+Logical right shift, however, does not care that the value could
+possibly represent a number; it simply moves everything to the
+right and fills in from the left with 0s. Shifting our -2 right 
+one bit using logical shift would give 01111111.
 */
 
 /*
 
->>> is unsigned-shift; it'll insert 0. >> is signed, and will extend the sign bit.
+>>> is unsigned-shift; it'll insert 0. >> is signed, and will
+extend the sign bit.
 
 JLS 15.19 Shift Operators
 
-The shift operators include left shift <<, signed right shift >>, and unsigned right shift >>>.
+The shift operators include left shift <<, signed right shift >>, 
+and unsigned right shift >>>.
 
 The value of n>>s is n right-shifted s bit positions with sign-extension.
 
