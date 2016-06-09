@@ -15,7 +15,6 @@ public class B2_BitRotation {
     B2_BitRotation br = new B2_BitRotation();
     System.out.println(br.rotateLeft( (byte)28,2) );
   }
-
 }
 
 
