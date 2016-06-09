@@ -2,7 +2,7 @@
 * Author: Vicky Chen
 * Date: 6/8/2016
 *
-Given an integer and number k, right or left rotate bits in this interger by k
+Given an integer and number k, right or left rotate bits in this integer by k
 
 */
 
@@ -17,6 +17,10 @@ public class B2_BitRotation {
   }
 }
 
+/*
+11100011 
+10001100 | 00000011 = 10001111
+*/
 
 /* 
 difference between >> and >>>
