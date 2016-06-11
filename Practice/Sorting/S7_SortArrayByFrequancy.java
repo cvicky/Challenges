@@ -54,6 +54,9 @@ public class S7_SortArrayByFrequency {
   public static void main(String args[]){
     Integer input[] = {5,2,8,9,9,9,2};
     S7_SortArrayByFrequency(input);
+    for(int i :input){
+      System.out.println(i+ " ");
+    }
   }
   
 }
