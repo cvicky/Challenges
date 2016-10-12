@@ -6,7 +6,7 @@ Read two integers and print two lines. The first line should contain integer div
 You don't need to perform any rounding or formatting operations.
 
 Input Format 
-The first line contains the first integer, . The second line contains the second integer, .
+The first line contains the first integer,N . The second line contains the second integer, M.
 
 Output Format 
 Print the two lines as described above.
