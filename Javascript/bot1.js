@@ -8,8 +8,8 @@ var Excel = require('exceljs');
  
 // credentials are optional 
 var spotifyApi = new SpotifyWebApi({
-  clientId : 'be543ed5aa8145db841f89b00a540810',
-  clientSecret : 'e9ab9620eac541b5a223c1e2f8650fdb',
+  clientId : 'enter client id',
+  clientSecret : 'enter secret id',
   redirectUri : 'http://www.example.com/callback'
 });
 
