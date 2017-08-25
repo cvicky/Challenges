@@ -22,3 +22,10 @@ function descendingOrder(n){
   let desc = parseInt(n.toString().split('').sort().reverse().join(''));
   return desc;
 }
+
+/*
+SAMPLE TESTS:
+Test.assertEquals(descendingOrder(0), 0)
+Test.assertEquals(descendingOrder(1), 1)
+Test.assertEquals(descendingOrder(123456789), 987654321)
+*/
