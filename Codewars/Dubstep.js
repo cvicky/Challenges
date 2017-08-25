@@ -31,6 +31,10 @@ function songDecoder(song){
   return originalSong
 }
 
+//BETTER SOLUTION: just replace WUBs with spaces then trim
+function songDecoder(song){
+ return song.replace(/(WUB)+/g," ").trim()
+}
 
 /*
 Sample Tests: 
